@@ -30,34 +30,6 @@ def palindromePermutation(string):
     return isPerm
 
 
-print(palindromePermutation("abdccdcdba"))
-
-
-
-
-
-
-
-
-
-
-
-def count_words(text):
-    text = text.replace(",", "")
-    text = text.split()
-    dictionary = {}
-
-    for word in text:
-        if word in dictionary:
-            dictionary[word] += 1
-        else:
-            dictionary[word] = 1
-        
-    string = ""
-    for line in dictionary:
-        string += str(line.lower())
-        string += " "
-        string += str(dictionary[line])
-        string += "\n"
-    string = string[:-1]
-    return string
+print(palindromePermutation("tact coa"))   # True
+print(palindromePermutation("abdccdcdba")) # True
+print(palindromePermutation("yeet"))       # False

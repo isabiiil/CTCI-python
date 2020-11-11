@@ -6,4 +6,5 @@ def URLify(string):
 # strip() removes leading and trailing whitespace
 # replace(" ", "%20") does what the question wants
 
+print(URLify("Mr John Smith"))
 print(URLify("Hello World"))
